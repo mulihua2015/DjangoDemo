@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示账号信息列表</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>账号id</th>
+        <th>账号名称</th>
+    </tr>
+    {%  for account in accounts %}
+    <tr>
+        <td>{{ account.id }}</td>
+         <td>{{ account.account_name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
